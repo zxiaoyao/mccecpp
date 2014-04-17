@@ -1,0 +1,94 @@
+#23456789A123456789B123456789C123456789D123456789
+HDONOR   ASP01       OD1
+HDONOR   ASP02       OD2
+
+HDONOR   ARG01       NH1  NH2      
+HDONOR   ARG02       NH1  NH2  NE
+HDONOR   ARG03       NH1  NH2  NE
+HDONOR   ARG+1       NH1  NH2  NE
+
+HDONOR   ASN01       ND2
+
+HDONOR   CYS01       SG
+ 
+HDONOR   GLN01       NE2
+
+HDONOR   GLU01       OE1
+HDONOR   GLU02       OE2
+
+HDONOR   HIS01       NE2
+HDONOR   HIS02       ND1
+HDONOR   HIS+1       ND1  NE2
+
+HDONOR   SER01       OG1
+
+HDONOR   TRP01       NE1
+
+HDONOR   THR01       OG1
+
+HDONOR   TYR01       OH
+
+HDONOR   LYS01       NZ
+HDONOR   LYS+1       NZ
+
+HDONOR   PAA01       O1A
+HDONOR   PAA02       O2A
+
+HDONOR   PDD01       O1D
+HDONOR   PAA02       O2A
+################################################
+# hydrogen bond acceptor #######################
+################################################
+
+HACCEPT  ASN01       OD1 
+
+HACCEPT  ASP01       OD2
+HACCEPT  ASP02       OD1
+HACCEPT  ASP-1       OD1  OD2
+
+HACCEPT  GLN01       OE1
+
+HACCEPT  GLU01       OE2
+HACCEPT  GLU02       OE1
+HACCEPT  GLU-1       OE1  OE2
+
+HACCEPT  TYR-1       OH
+
+HACCEPT  PAA01       O2A
+HACCEPT  PAA02       O1A
+HACCEPT  PAA-1       O1A  O2A
+
+HACCEPT  PDD01       O2D
+HACCEPT  PDD02       O1D
+HACCEPT  PDD-1       O1D  O2D
+
+HACCEPT  MET01       SD
+
+
+# not often used amino acid 
+HDONOR   UbQP1       O2
+HDONOR   UbQP2       O5
+HDONOR   UbQS1       O2
+HDONOR   UbQS2       O5
+HDONOR   FEX+2       FE
+HDONOR   FS4+2       FE1
+HDONOR   HOH01       O               	# water molecule
+HDONOR   PTR01       O2P  O3P
+HDONOR   PTR-1       O2P
+HDONOR   TPO01       O2P  O3P
+HDONOR   TPO-1       O2P
+HDONOR   TYL01       OH
+
+HACCEPT  HOH01       O			# water molecule
+HACCEPT  PTR-1       O2P
+HACCEPT  PTR-2       O2P  O3P
+HACCEPT  TPO-1       O2P
+HACCEPT  TPO-2       O2P  O3P
+HACCEPT  TYL-1       OH
+
+# for rsb
+HDONOR   RSB+1       NZ
+HACCEPT  RSB01       NZ
+HACCEPT  RSB+1       NZ
+
+

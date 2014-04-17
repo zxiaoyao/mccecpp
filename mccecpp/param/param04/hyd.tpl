@@ -1,0 +1,81 @@
+CONFLIST HYD        HYDBK HYD01 HYD+1#HYD-1 #HYD+1
+
+NATOM    HYDBK      0
+NATOM    HYD01      3
+NATOM    HYDDM      0
+NATOM    HYD-1      2
+NATOM    HYD+1      4
+
+IATOM    HYD01  O   0
+IATOM    HYD01 1H   1
+IATOM    HYD01 2H   2
+IATOM    HYD-1  O   0
+IATOM    HYD-1  H   1
+IATOM    HYD+1  O   0
+IATOM    HYD+1 1H   1
+IATOM    HYD+1 2H   2
+IATOM    HYD+1 3H   3
+
+ATOMNAME HYD01    0  O
+ATOMNAME HYD01    1 1H
+ATOMNAME HYD01    2 2H
+ATOMNAME HYD-1    0  O
+ATOMNAME HYD-1    1  H
+ATOMNAME HYD+1    0  O
+ATOMNAME HYD+1    1 1H
+ATOMNAME HYD+1    2 2H
+ATOMNAME HYD+1    3 3H
+
+RXN      HYD01       -1.8
+RXN      HYD+1       -14.8
+RXN      HYD-1       -25.5
+RXN      HYDDM        0.0
+PKA      HYD01        0.0
+PKA      HYD+1        -1.4
+PKA      HYD-1        15.7
+PKA      HYDDM        0.0
+PROTON   HYD01        0
+PROTON   HYD+1        1
+PROTON   HYD-1        -1
+PROTON   HYDDM        0
+ELECTRON HYD01        0
+ELECTRON HYDDM        0
+
+
+#23456789A123456789B123456789C123456789D123456789E123456789F123456789G123456789H123456789I
+#23456789A123456789B123456789C123456789D123456789E123456789F123456789G123456789H123456789I
+#ONNECT   conf atom  orbital  ires conn ires conn ires conn ires conn
+#ONNECT |-----|----|---------|----|----|----|----|----|----|----|----|----|----|----|----|
+CONNECT  HYD01  O   sp3       0    1H   0    2H
+CONNECT  HYD01 1H   s         0     O
+CONNECT  HYD01 2H   s         0     O
+
+CONNECT  HYD-1  O   sp3       0     H
+CONNECT  HYD-1  H   s         0     O
+
+CONNECT  HYD+1  O   sp3       0    1H   0    2H   0    3H
+CONNECT  HYD+1 1H   s         0     O
+CONNECT  HYD+1 2H   s         0     O
+CONNECT  HYD+1 3H   s         0     O
+
+DONOR    HYD01 1H    O
+DONOR    HYD01 2H    O
+ACCEPTOR HYD01  O   1H
+
+CHARGE   HYD01  O    -0.80
+CHARGE   HYD01 1H     0.40
+CHARGE   HYD01 2H     0.40
+
+CHARGE   HYD-1  O    -1.20
+CHARGE   HYD-1  H     0.20
+
+CHARGE   HYD+1  O    -0.50
+CHARGE   HYD+1 1H     0.50
+CHARGE   HYD+1 2H     0.50
+CHARGE   HYD+1 3H     0.50
+
+RADIUS   HYD    O     1.60
+RADIUS   HYD    H     1.00
+RADIUS   HYD   1H     1.00
+RADIUS   HYD   2H     1.00
+RADIUS   HYD   3H     1.00
