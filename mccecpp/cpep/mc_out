@@ -3,13 +3,13 @@ Identified 8 free residues from 13 residues.
 Doing annealing... 
 Step          0, E_minimum =    1082.63, E_running =    1082.63
 Exit      50000, E_minimum =    1044.52, E_running =    1044.59
-The average running energy, corresponding to H, is 1044.980 kCal/mol
+The average running energy, corresponding to H, is 1044.995 kCal/mol
 Done
 
 Doing equalibration ... 
 Step          0, E_minimum =    1044.59, E_running =    1044.59
-Exit      50000, E_minimum =    1044.52, E_running =    1044.53
-The average running energy, corresponding to H, is 1044.994 kCal/mol
+Exit      50000, E_minimum =    1044.52, E_running =    1044.59
+The average running energy, corresponding to H, is 1044.998 kCal/mol
 Done
 
 Reducing conflist ... 0 conformers are marked as fixed.
@@ -17,93 +17,93 @@ Reducing conflist ... 0 conformers are marked as fixed.
 8 free residues from 13 residues, after reduction.
 
 Doing annealing of MC  1 ...
-Step          0, E_minimum =    1090.95, E_running =    1090.95
-Exit      50000, E_minimum =    1044.52, E_running =    1044.64
-The average running energy, corresponding to H, is 1045.085 kCal/mol
+Step          0, E_minimum =    1092.34, E_running =    1092.34
+Exit      50000, E_minimum =    1044.52, E_running =    1044.88
+The average running energy, corresponding to H, is 1045.081 kCal/mol
 Doing MC  1 ... 
-Step          0, E_minimum =    1044.64, E_running =    1044.64
-Step      50000, E_minimum =    1044.52, E_running =    1044.53
-Exit     100000, E_minimum =    1044.52, E_running =    1044.59
-The average running energy, corresponding to H, is 1045.052 kCal/mol
-Step          0, E_minimum =    1044.59, E_running =    1044.59
-Step      50000, E_minimum =    1044.52, E_running =    1044.64
-Exit     100000, E_minimum =    1044.52, E_running =    1047.50
-The average running energy, corresponding to H, is 1044.996 kCal/mol
+Step          0, E_minimum =    1044.88, E_running =    1044.88
+Step      50000, E_minimum =    1044.52, E_running =    1044.52
+Exit     100000, E_minimum =    1044.52, E_running =    1044.56
+The average running energy, corresponding to H, is 1045.034 kCal/mol
+Step          0, E_minimum =    1044.56, E_running =    1044.56
+Step      50000, E_minimum =    1044.52, E_running =    1044.59
+Exit     100000, E_minimum =    1044.52, E_running =    1044.56
+The average running energy, corresponding to H, is 1044.998 kCal/mol
 Done
 
 Doing annealing of MC  2 ...
-Step          0, E_minimum =    1095.87, E_running =    1095.87
-Exit      50000, E_minimum =    1044.52, E_running =    1044.59
-The average running energy, corresponding to H, is 1045.023 kCal/mol
+Step          0, E_minimum =    1084.36, E_running =    1084.36
+Exit      50000, E_minimum =    1044.52, E_running =    1044.64
+The average running energy, corresponding to H, is 1045.028 kCal/mol
 Doing MC  2 ... 
-Step          0, E_minimum =    1044.59, E_running =    1044.59
-Step      50000, E_minimum =    1044.52, E_running =    1044.57
-Exit     100000, E_minimum =    1044.52, E_running =    1044.66
-The average running energy, corresponding to H, is 1045.024 kCal/mol
 Step          0, E_minimum =    1044.64, E_running =    1044.64
-Step      50000, E_minimum =    1044.52, E_running =    1044.89
-Exit     100000, E_minimum =    1044.52, E_running =    1044.53
-The average running energy, corresponding to H, is 1045.020 kCal/mol
+Step      50000, E_minimum =    1044.52, E_running =    1045.48
+Exit     100000, E_minimum =    1044.52, E_running =    1044.57
+The average running energy, corresponding to H, is 1045.023 kCal/mol
+Step          0, E_minimum =    1044.56, E_running =    1044.56
+Step      50000, E_minimum =    1044.52, E_running =    1044.88
+Exit     100000, E_minimum =    1044.52, E_running =    1044.57
+The average running energy, corresponding to H, is 1045.006 kCal/mol
 Done
 
 Doing annealing of MC  3 ...
-Step          0, E_minimum =    1076.80, E_running =    1076.80
-Exit      50000, E_minimum =    1044.52, E_running =    1044.56
-The average running energy, corresponding to H, is 1044.994 kCal/mol
+Step          0, E_minimum =    1072.70, E_running =    1072.70
+Exit      50000, E_minimum =    1044.52, E_running =    1044.64
+The average running energy, corresponding to H, is 1044.978 kCal/mol
 Doing MC  3 ... 
-Step          0, E_minimum =    1044.56, E_running =    1044.56
-Step      50000, E_minimum =    1044.52, E_running =    1044.59
-Exit     100000, E_minimum =    1044.52, E_running =    1044.53
-The average running energy, corresponding to H, is 1044.985 kCal/mol
-Step          0, E_minimum =    1044.53, E_running =    1044.53
+Step          0, E_minimum =    1044.64, E_running =    1044.64
+Step      50000, E_minimum =    1044.52, E_running =    1046.37
+Exit     100000, E_minimum =    1044.52, E_running =    1044.89
+The average running energy, corresponding to H, is 1044.994 kCal/mol
+Step          0, E_minimum =    1044.88, E_running =    1044.88
 Step      50000, E_minimum =    1044.52, E_running =    1044.58
-Exit     100000, E_minimum =    1044.52, E_running =    1045.34
-The average running energy, corresponding to H, is 1045.043 kCal/mol
+Exit     100000, E_minimum =    1044.52, E_running =    1044.52
+The average running energy, corresponding to H, is 1045.071 kCal/mol
 Done
 
 Doing annealing of MC  4 ...
-Step          0, E_minimum =    1071.52, E_running =    1071.52
-Exit      50000, E_minimum =    1044.52, E_running =    1044.94
-The average running energy, corresponding to H, is 1045.069 kCal/mol
+Step          0, E_minimum =    1079.13, E_running =    1079.13
+Exit      50000, E_minimum =    1044.52, E_running =    1044.56
+The average running energy, corresponding to H, is 1045.027 kCal/mol
 Doing MC  4 ... 
-Step          0, E_minimum =    1044.95, E_running =    1044.95
-Step      50000, E_minimum =    1044.52, E_running =    1044.64
-Exit     100000, E_minimum =    1044.52, E_running =    1047.47
+Step          0, E_minimum =    1044.56, E_running =    1044.56
+Step      50000, E_minimum =    1044.52, E_running =    1044.59
+Exit     100000, E_minimum =    1044.52, E_running =    1044.53
 The average running energy, corresponding to H, is 1044.972 kCal/mol
-Step          0, E_minimum =    1047.46, E_running =    1047.46
-Step      50000, E_minimum =    1044.52, E_running =    1044.56
-Exit     100000, E_minimum =    1044.52, E_running =    1044.56
-The average running energy, corresponding to H, is 1044.990 kCal/mol
+Step          0, E_minimum =    1044.53, E_running =    1044.53
+Step      50000, E_minimum =    1044.52, E_running =    1044.64
+Exit     100000, E_minimum =    1044.52, E_running =    1044.65
+The average running energy, corresponding to H, is 1044.998 kCal/mol
 Done
 
 Doing annealing of MC  5 ...
-Step          0, E_minimum =    1092.70, E_running =    1092.70
-Exit      50000, E_minimum =    1044.52, E_running =    1044.59
-The average running energy, corresponding to H, is 1044.982 kCal/mol
+Step          0, E_minimum =    1081.83, E_running =    1081.83
+Exit      50000, E_minimum =    1044.52, E_running =    1044.64
+The average running energy, corresponding to H, is 1044.973 kCal/mol
 Doing MC  5 ... 
-Step          0, E_minimum =    1044.59, E_running =    1044.59
+Step          0, E_minimum =    1044.64, E_running =    1044.64
 Step      50000, E_minimum =    1044.52, E_running =    1044.64
-Exit     100000, E_minimum =    1044.52, E_running =    1045.42
-The average running energy, corresponding to H, is 1044.993 kCal/mol
-Step          0, E_minimum =    1045.42, E_running =    1045.42
-Step      50000, E_minimum =    1044.52, E_running =    1044.88
-Exit     100000, E_minimum =    1044.52, E_running =    1044.58
-The average running energy, corresponding to H, is 1045.022 kCal/mol
+Exit     100000, E_minimum =    1044.52, E_running =    1044.53
+The average running energy, corresponding to H, is 1045.007 kCal/mol
+Step          0, E_minimum =    1044.53, E_running =    1044.53
+Step      50000, E_minimum =    1044.52, E_running =    1045.48
+Exit     100000, E_minimum =    1044.52, E_running =    1044.64
+The average running energy, corresponding to H, is 1045.007 kCal/mol
 Done
 
 Doing annealing of MC  6 ...
-Step          0, E_minimum =    1111.50, E_running =    1111.50
-Exit      50000, E_minimum =    1044.52, E_running =    1044.57
-The average running energy, corresponding to H, is 1044.993 kCal/mol
+Step          0, E_minimum =    1078.03, E_running =    1078.03
+Exit      50000, E_minimum =    1044.52, E_running =    1045.20
+The average running energy, corresponding to H, is 1045.039 kCal/mol
 Doing MC  6 ... 
-Step          0, E_minimum =    1044.56, E_running =    1044.56
-Step      50000, E_minimum =    1044.52, E_running =    1044.88
-Exit     100000, E_minimum =    1044.52, E_running =    1047.46
-The average running energy, corresponding to H, is 1045.011 kCal/mol
-Step          0, E_minimum =    1047.46, E_running =    1047.46
+Step          0, E_minimum =    1045.20, E_running =    1045.20
 Step      50000, E_minimum =    1044.52, E_running =    1044.59
-Exit     100000, E_minimum =    1044.52, E_running =    1044.59
-The average running energy, corresponding to H, is 1045.007 kCal/mol
+Exit     100000, E_minimum =    1044.52, E_running =    1047.87
+The average running energy, corresponding to H, is 1045.002 kCal/mol
+Step          0, E_minimum =    1047.87, E_running =    1047.87
+Step      50000, E_minimum =    1044.52, E_running =    1044.65
+Exit     100000, E_minimum =    1044.52, E_running =    1045.48
+The average running energy, corresponding to H, is 1045.004 kCal/mol
 Done
 
 Conformer     flag   E_self   mc01   mc02   mc03   mc04   mc05   mc06      occ Sgm(n-1)
@@ -111,33 +111,33 @@ LYS01_0001_001   f    3.368  1.000  1.000  1.000  1.000  1.000  1.000 Av=1.000 S
 LYS+1_0001_002   f   17.475  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
 GLU01_0002_001   f 1004.400  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
 GLU01_0002_002   f 1001.682  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_003   f 1004.444  0.006  0.003  0.005  0.004  0.007  0.005 Av=0.005 Sg=0.002
-GLU02_0002_004   f 1001.726  0.994  0.997  0.995  0.996  0.993  0.995 Av=0.995 Sg=0.002
+GLU02_0002_003   f 1004.444  0.007  0.003  0.008  0.004  0.005  0.005 Av=0.005 Sg=0.002
+GLU02_0002_004   f 1001.726  0.993  0.997  0.992  0.996  0.995  0.995 Av=0.995 Sg=0.002
 GLU-1_0002_005   f 1015.661  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-THR01_0003_001   f   -2.279  0.475  0.476  0.483  0.477  0.475  0.477 Av=0.477 Sg=0.003
-THR01_0003_002   f   -2.277  0.525  0.524  0.517  0.523  0.525  0.523 Av=0.523 Sg=0.003
+THR01_0003_001   f   -2.279  0.476  0.476  0.483  0.477  0.476  0.477 Av=0.478 Sg=0.003
+THR01_0003_002   f   -2.277  0.524  0.524  0.517  0.523  0.524  0.523 Av=0.522 Sg=0.003
 ALA01_0004_001   t   -5.675  1.000  1.000  1.000  1.000  1.000  1.000 Av=1.000 Sg=0.000
 ALA01_0005_001   t   -4.099  1.000  1.000  1.000  1.000  1.000  1.000 Av=1.000 Sg=0.000
 ALA01_0006_001   t   -3.711  1.000  1.000  1.000  1.000  1.000  1.000 Av=1.000 Sg=0.000
 LYS01_0007_001   f    0.109  1.000  1.000  1.000  1.000  1.000  1.000 Av=1.000 Sg=0.000
 LYS+1_0007_002   f   13.710  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
 PHE01_0008_001   t   -6.873  1.000  1.000  1.000  1.000  1.000  1.000 Av=1.000 Sg=0.000
-GLU01_0009_001   f    8.214  0.008  0.011  0.009  0.012  0.009  0.010 Av=0.010 Sg=0.002
-GLU01_0009_002   f    5.492  0.938  0.936  0.944  0.945  0.940  0.939 Av=0.940 Sg=0.004
+GLU01_0009_001   f    8.214  0.008  0.012  0.009  0.011  0.008  0.010 Av=0.010 Sg=0.002
+GLU01_0009_002   f    5.492  0.939  0.936  0.943  0.948  0.941  0.941 Av=0.941 Sg=0.004
 GLU02_0009_003   f   10.006  0.001  0.001  0.000  0.001  0.000  0.000 Av=0.001 Sg=0.000
-GLU02_0009_004   f    7.288  0.053  0.052  0.047  0.042  0.051  0.051 Av=0.049 Sg=0.004
+GLU02_0009_004   f    7.288  0.053  0.052  0.047  0.040  0.051  0.050 Av=0.049 Sg=0.005
 GLU-1_0009_005   f   19.609  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG01_0010_001   f    2.501  0.973  0.971  0.956  0.975  0.967  0.975 Av=0.970 Sg=0.007
-ARG02_0010_002   f    2.929  0.009  0.010  0.010  0.008  0.009  0.007 Av=0.009 Sg=0.001
-ARG02_0010_003   f    2.943  0.010  0.010  0.020  0.010  0.011  0.009 Av=0.012 Sg=0.004
-ARG03_0010_004   f    2.835  0.008  0.009  0.013  0.007  0.013  0.009 Av=0.010 Sg=0.003
+ARG01_0010_001   f    2.501  0.973  0.976  0.947  0.971  0.971  0.975 Av=0.969 Sg=0.011
+ARG02_0010_002   f    2.929  0.009  0.007  0.010  0.007  0.007  0.007 Av=0.008 Sg=0.001
+ARG02_0010_003   f    2.943  0.011  0.008  0.021  0.011  0.013  0.009 Av=0.012 Sg=0.004
+ARG03_0010_004   f    2.706  0.008  0.008  0.021  0.010  0.010  0.009 Av=0.011 Sg=0.005
 ARG+1_0010_005   f    6.786  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLN01_0011_001   f   12.591  0.575  0.580  0.572  0.576  0.573  0.569 Av=0.574 Sg=0.004
-GLN01_0011_002   f   12.687  0.425  0.420  0.428  0.424  0.427  0.431 Av=0.426 Sg=0.004
-HIS01_0012_001   f   -3.919  0.100  0.103  0.110  0.114  0.103  0.113 Av=0.107 Sg=0.006
-HIS01_0012_002   f   -3.962  0.337  0.356  0.331  0.344  0.316  0.331 Av=0.336 Sg=0.013
-HIS02_0012_003   f   -3.978  0.111  0.117  0.118  0.110  0.125  0.117 Av=0.116 Sg=0.005
-HIS02_0012_004   f   -4.040  0.452  0.424  0.441  0.432  0.456  0.439 Av=0.441 Sg=0.012
+GLN01_0011_001   f   12.591  0.575  0.580  0.569  0.576  0.575  0.569 Av=0.574 Sg=0.004
+GLN01_0011_002   f   12.687  0.425  0.420  0.431  0.424  0.425  0.431 Av=0.426 Sg=0.004
+HIS01_0012_001   f   -3.919  0.100  0.103  0.110  0.113  0.104  0.113 Av=0.107 Sg=0.005
+HIS01_0012_002   f   -3.962  0.339  0.354  0.329  0.345  0.317  0.333 Av=0.336 Sg=0.013
+HIS02_0012_003   f   -3.978  0.110  0.118  0.116  0.110  0.126  0.118 Av=0.116 Sg=0.006
+HIS02_0012_004   f   -4.040  0.450  0.425  0.445  0.432  0.453  0.437 Av=0.440 Sg=0.011
 HIS+1_0012_005   f    8.110  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
 HIS+1_0012_006   f    8.051  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
 MET01_0013_001   t   -6.017  1.000  1.000  1.000  1.000  1.000  1.000 Av=1.000 Sg=0.000
