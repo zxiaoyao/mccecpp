@@ -9,8 +9,8 @@
 #define VDW_CUTOFF_FAR   10
 #define VDW_ELIMIT_FAR   0
 
-static float cutoff_near2 = VDW_CUTOFF_NEAR * VDW_CUTOFF_NEAR;
-static float cutoff_far2  = VDW_CUTOFF_FAR  * VDW_CUTOFF_FAR;
+//static float cutoff_near2 = VDW_CUTOFF_NEAR * VDW_CUTOFF_NEAR;
+//static float cutoff_far2  = VDW_CUTOFF_FAR  * VDW_CUTOFF_FAR;
 
 float a2a_coulomb(ATOM atom1, ATOM atom2)
 /* return unit is Kcal/mol */

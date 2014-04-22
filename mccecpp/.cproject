@@ -50,18 +50,11 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
-					<folderInfo id="cdt.managedbuild.config.gnu.macosx.exe.debug.1725710624.698518536" name="/" resourcePath="param">
-						<toolChain id="cdt.managedbuild.toolchain.gnu.base.189385981" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base" unusedChildren="">
-							<tool id="cdt.managedbuild.tool.gnu.archiver.base.580335436" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base.63234834"/>
-							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.1578568269" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.1889188757"/>
-							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.1377456721" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base.1133477493"/>
-							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.1651022029" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base.537993074"/>
-							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1763854008" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base.369896294"/>
-							<tool id="cdt.managedbuild.tool.gnu.assembler.base.318404178" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base.661074268"/>
-						</toolChain>
-					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.gnu.macosx.exe.debug.1725710624.1882610888" name="sas_native.cpp" rcbsApplicability="disable" resourcePath="src/mcce/sas_native.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.base.1889188757.701243053">
+						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.1889188757.701243053" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.1889188757"/>
+					</fileInfo>
 					<sourceEntries>
-						<entry excluding="param|cpep|src/mcce/surfw_l2.cpp|src/mcce/create_param.cpp|src/mcce/monte_ms.cpp|src/mcce/param_get.cpp|src/mcce/param_sav.cpp|src/mcce/param_exist.cpp|src/mcce/iatom.cpp|src/mcce/db_close.cpp|src/mcce/vdw_conf_new.cpp|src/mcce/vdw_all.cpp|src/mcce/testing.cpp|src/mcce/rotamers_ga.cpp|src/mcce/premcce_bak.cpp|src/mcce/native_relax.cpp|src/mcce/ga_engine.cpp|src/mcce/energies3.cpp|src/mcce/compute_patches.cpp|src/mcce/caller.cpp|src/mcce/ga_engine.c|src/delphicpp/misc/misc_grid_impls.cpp|src/delphicpp/interface/interface_datacontainer_impls.cpp|src/delphicpp/app/app_delphi.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="src/mcce/sas_native.cpp|param|cpep|src/mcce/surfw_l2.cpp|src/mcce/create_param.cpp|src/mcce/monte_ms.cpp|src/mcce/param_get.cpp|src/mcce/param_sav.cpp|src/mcce/param_exist.cpp|src/mcce/iatom.cpp|src/mcce/db_close.cpp|src/mcce/vdw_conf_new.cpp|src/mcce/vdw_all.cpp|src/mcce/testing.cpp|src/mcce/rotamers_ga.cpp|src/mcce/premcce_bak.cpp|src/mcce/native_relax.cpp|src/mcce/ga_engine.cpp|src/mcce/energies3.cpp|src/mcce/compute_patches.cpp|src/mcce/caller.cpp|src/mcce/ga_engine.c|src/delphicpp/misc/misc_grid_impls.cpp|src/delphicpp/interface/interface_datacontainer_impls.cpp|src/delphicpp/app/app_delphi.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -114,18 +107,11 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
-					<folderInfo id="cdt.managedbuild.config.macosx.exe.release.1750838233.176606415" name="/" resourcePath="param">
-						<toolChain id="cdt.managedbuild.toolchain.gnu.base.1862667693" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base" unusedChildren="">
-							<tool id="cdt.managedbuild.tool.gnu.archiver.base.1575889983" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base.139713036"/>
-							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.1422862798" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.897230389"/>
-							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.983145807" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base.1037934047"/>
-							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.1503057408" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base.1810532914"/>
-							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1214918884" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base.534461028"/>
-							<tool id="cdt.managedbuild.tool.gnu.assembler.base.1691129152" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base.483184659"/>
-						</toolChain>
-					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.macosx.exe.release.1750838233.1738042131" name="sas_native.cpp" rcbsApplicability="disable" resourcePath="src/mcce/sas_native.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.base.897230389.185209152">
+						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.897230389.185209152" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base.897230389"/>
+					</fileInfo>
 					<sourceEntries>
-						<entry excluding="param|cpep|src/mcce/surfw_l2.cpp|src/mcce/create_param.cpp|src/mcce/monte_ms.cpp|src/mcce/param_get.cpp|src/mcce/param_sav.cpp|src/mcce/param_exist.cpp|src/mcce/iatom.cpp|src/mcce/db_close.cpp|src/mcce/vdw_conf_new.cpp|src/mcce/vdw_all.cpp|src/mcce/testing.cpp|src/mcce/rotamers_ga.cpp|src/mcce/premcce_bak.cpp|src/mcce/native_relax.cpp|src/mcce/ga_engine.cpp|src/mcce/energies3.cpp|src/mcce/compute_patches.cpp|src/mcce/caller.cpp|src/mcce/ga_engine.c|src/delphicpp/misc/misc_grid_impls.cpp|src/delphicpp/interface/interface_datacontainer_impls.cpp|src/delphicpp/app/app_delphi.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="src/mcce/sas_native.cpp|param|cpep|src/mcce/surfw_l2.cpp|src/mcce/create_param.cpp|src/mcce/monte_ms.cpp|src/mcce/param_get.cpp|src/mcce/param_sav.cpp|src/mcce/param_exist.cpp|src/mcce/iatom.cpp|src/mcce/db_close.cpp|src/mcce/vdw_conf_new.cpp|src/mcce/vdw_all.cpp|src/mcce/testing.cpp|src/mcce/rotamers_ga.cpp|src/mcce/premcce_bak.cpp|src/mcce/native_relax.cpp|src/mcce/ga_engine.cpp|src/mcce/energies3.cpp|src/mcce/compute_patches.cpp|src/mcce/caller.cpp|src/mcce/ga_engine.c|src/delphicpp/misc/misc_grid_impls.cpp|src/delphicpp/interface/interface_datacontainer_impls.cpp|src/delphicpp/app/app_delphi.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
