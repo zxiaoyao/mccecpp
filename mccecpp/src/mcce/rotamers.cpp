@@ -64,7 +64,7 @@ float max_confSAS(PROT prot, int ir, int ic);
 int label_exposed(PROT prot);
 int rand_conf_prune(PROT prot);
 int place_missing_res(PROT prot, int i_res, int handle_addconf);
-int write_pdb_headlist(char *fn, PROT prot);
+int write_pdb_headlist(const char *fn, PROT prot);
 void make_rotamer_statistics(CONFSTAT *confstat, PROT *prot);
 
 #define ROT_DIR "rot"
@@ -464,7 +464,8 @@ int rotamers()
 
 	/* add h */
 	printf("   Add H atoms...\n"); fflush(stdout);
-	while(place_missing(prot,1) > 0); rm_dupconf(prot, 0.001);
+	while(place_missing(prot,1) > 0) {}
+	rm_dupconf(prot, 0.001);
 	assign_rad(prot);
 	assign_vdw_param(prot);
 	assign_crg(prot); /* reassign parameters before rm_dupconf(), Yifan -02/07/07 */
@@ -528,7 +529,8 @@ int rotamers()
 		assign_rad(prot);
 		rm_dupconf(prot, 0.001); /* identical coordinates */
 
-		while(place_missing(prot,1) > 0); rm_dupconf(prot, 0.001);
+		while(place_missing(prot,1) > 0) {}
+		rm_dupconf(prot, 0.001);
 
 		assign_crg(prot); /* reassign parameters before rm_dupconf(), Yifan -02/07/07 */
 		assign_rad(prot);
@@ -1582,7 +1584,8 @@ int rot_pack(PROT prot, int n)
 	}
 
 	/* preparing energy lookup table */
-	while(place_missing(prot,1) > 0); rm_dupconf(prot, 0.001);
+	while(place_missing(prot,1) > 0) {}
+	rm_dupconf(prot, 0.001);
 	del_non_common_h(prot);
 	rm_dupconf(prot, 0.001);
 	assign_vdw_param(prot);
@@ -5183,7 +5186,7 @@ int rand_conf_prune(PROT prot)
 	return 0;
 }
 
-int write_pdb_headlist(char *fn, PROT prot)
+int write_pdb_headlist(const char *fn, PROT prot)
 {
 	FILE *fp;
 	char pdb_name[100], hd_name[100];

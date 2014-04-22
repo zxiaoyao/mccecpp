@@ -13,7 +13,7 @@ int refresh_prot(PROT prot);
 
 int make_matrices(PROT prot, char *dir)
 {
-	int i, kr, kc, counter, verbose;
+	int i, kr, kc, counter, verbose = 0;
 	int n_conf, n_dummies;
 	char fname[MAXCHAR_LINE];
 	FILE *fp;
@@ -221,7 +221,7 @@ int make_matrices(PROT prot, char *dir)
 	return 0;
 }
 
-int load_energies(EMATRIX *ematrix, char *dir, int verbose)
+int load_energies(EMATRIX *ematrix, const char *dir, int verbose)
 /* this program returns number of conformers loaded, or -1 if no exsiting energy table */
 {
 	int i, n_conf;

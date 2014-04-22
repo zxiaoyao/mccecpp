@@ -28,7 +28,7 @@ char rules_to[MAXLINES_NAME][15];
 int c;
 
 
-static time_t nowA, nowStart, nowEnd;
+static time_t nowStart, nowEnd;
 
 FILE *premcce_rename(FILE *fp_in);
 FILE *premcce_terminals(FILE *fp_in);

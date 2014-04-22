@@ -256,9 +256,9 @@ int monte()
     //printf("ms_out: %d\n", env.ms_out);
     if (env.ms_out) {
     	const char FN_MS_GOLD[] = "ms_gold";
-    	const char FN_MS_OUT[]  = "ms.out";
+//    	const char FN_MS_OUT[]  = "ms.out";
     	const char FN_BIT_OUT[] = "bit.out";
-    	const char FN_PROTONATION[] = "protonation.txt";
+//    	const char FN_PROTONATION[] = "protonation.txt";
 
     	memset(&ms_spe_lst, 0, sizeof(STRINGS));
     	ms_spe_lst.n = 0;
@@ -1137,7 +1137,7 @@ void MC(int n)
 {
 	int cycles, n_total, n_cycle;
     int i, j, k;
-    register int iters;
+    int iters;
     int mem;
     int *old_state;
     float  old_E;
@@ -1775,6 +1775,8 @@ int print_mfe(int i_res, float mfeP, FILE *pK_fp, FILE *res_fp)
             i_high=k; break;
         }
     }
+
+    i_low = 0;
     for (k=Nx-1; k>=0; k--) {
         if (xp[k] <= mfeP) {
             i_low=k; break;
@@ -2582,7 +2584,7 @@ void MC_smp(int n)
 {
 	int cycles, n_total, n_cycle;
     int i, j, k;
-    register int iters;
+    int iters;
     int mem;
     int *old_state;
     float  old_E;

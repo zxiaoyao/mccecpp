@@ -126,12 +126,12 @@ void free_strings(STRINGS *s);
 
 
 /* Parameter functions */
-int param_sav(char *key1, char *key2, char *key3, void *value, int s);
+int param_sav(const char *key1, const char *key2, const char *key3, void *value, int s);
 int db_close();
 int db_open();
-int iatom(char *conf_name, char *atom_name);
-int param_get(char *key1, char *key2, char *key3, void *value);
-int param_exist(char *key1, char *key2, char *key3);
+int iatom(const char *conf_name, const char *atom_name);
+int param_get(const char *key1, const char *key2, const char *key3, void *value);
+int param_exist(const char *key1, const char *key2, const char *key3);
 int check_tpl(char *fname);
 int load_param(char *fname);
 int load_all_param(char *dirname);
@@ -806,7 +806,7 @@ int rotate_atoms(VECTOR v0, VECTOR v1, float angle, int na, ATOM **atoms_p);
 int add_membrane(PROT *prot_p, IPECE *ipece);
 
 /* other functions */
-int strip(char *target, char *str);
+int strip(char *target, const char *str);
 int get_env();
 int assign_vdw_param(PROT prot);
 int assign_rad(PROT prot);
@@ -847,7 +847,7 @@ int free_ematrix(EMATRIX *ematrix);
 int make_matrices(PROT prot, char *dir);
 int write_energies(EMATRIX *ematrix, char *dir, int verbose);
 int head3lst_param(EMATRIX ematrix);
-int load_energies(EMATRIX *ematrix, char *dir, int verbose);
+int load_energies(EMATRIX *ematrix, const char *dir, int verbose);
 int extract_matrix(EMATRIX *ematrix, char *dir, int verbose);
 
 /* Modeules */

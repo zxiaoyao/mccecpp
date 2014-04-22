@@ -98,7 +98,7 @@ int db_close()
 }
 
 
-int iatom(char *conf_name, char *atom_name)
+int iatom(const char *conf_name, const char *atom_name)
 {  datum pkey, pvalue;
    char key[MAXCHAR_LINE];
    char sbuff[MAXCHAR_LINE];
@@ -125,7 +125,7 @@ int iatom(char *conf_name, char *atom_name)
 }
 
 
-int param_sav(char *key1, char *key2, char *key3, void *value, int s)
+int param_sav(const char *key1, const char *key2, const char *key3, void *value, int s)
 {
 	datum pkey, pvalue;
 	char key[MAXCHAR_LINE];
@@ -150,7 +150,7 @@ int param_sav(char *key1, char *key2, char *key3, void *value, int s)
 }
 
 
-int param_get(char *key1, char *key2, char *key3, void *value)
+int param_get(const char *key1, const char *key2, const char *key3, void *value)
 /* WARNING: if the expected value is a string, it has to be long enough
  *          (>=MAXCHAR_LINE) to accept the stored value to avoid over
  *          boundary writing.
@@ -178,7 +178,7 @@ int param_get(char *key1, char *key2, char *key3, void *value)
    }
 }
 
-int param_exist(char *key1, char *key2, char *key3)
+int param_exist(const char *key1, const char *key2, const char *key3)
 {
     datum pkey;
     char key[MAXCHAR_LINE];

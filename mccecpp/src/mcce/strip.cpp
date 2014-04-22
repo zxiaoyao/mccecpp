@@ -9,7 +9,7 @@
  * @param str orignal string.
  * @return number of spaces stripped.
  */
-int strip(char *target, char *str)
+int strip(char *target, const char *str)
 /* get the string without the leading and ending spaces, return spaces stripped */
 {  int len = strlen(str);
    int i, j;

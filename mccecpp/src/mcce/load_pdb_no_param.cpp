@@ -322,14 +322,14 @@ PROT load_pdb_binary_no_param(FILE *fp) {
     int nb_residues;
     int nb_conformers;
     int i,j,k;
-    int i_atom;
+//    int i_atom;
     //start reading binary PDB file
     fread(&nb_residues,sizeof(int),1,fp);
     //printf("%i RESIDUES to read in from binary PDB File. Please wait...\n",nb_residues);
     int count = 0;
     int *iatm;
     int k_RES;
-    int original_index;
+//    int original_index;
     for(count=0; count<nb_residues; count++) {
 	    fread(&nb_conformers,sizeof(int),1,fp);/*read in the number of conformers for this residue*/
 	    //fread(&original_index, sizeof(int),1,fp);

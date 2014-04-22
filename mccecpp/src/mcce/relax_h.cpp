@@ -367,7 +367,7 @@ int relax_h(PROT prot)
                         if (torsion_atoms(conf_p, all_atoms[ka].i_atom_conf, &atom_p0, &atom_p1, &atom_p2, &atom_p3, &tors, 1)) continue;
                         //printf("%s opt=%d\n",atom_p0->name,tors.opt_hyd);
                         if (!tors.opt_hyd) continue;
-                        int n_connect;
+                        int n_connect = 0;
 
                         // atom_p0 is H, atom_p1 is O, in the 4 atoms involved in torsion
                         for (i_connect=0; i_connect<MAX_CONNECTED; i_connect++) {

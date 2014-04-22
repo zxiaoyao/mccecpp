@@ -5,8 +5,8 @@
 #include <math.h>
 #include "mcce.h"
 
-PROT monte2_load_conflist(char *fname);
-PROT monte2_load_pk1out(char *pk1out, char *dconf2);
+PROT monte2_load_conflist(const char *fname);
+PROT monte2_load_pk1out(const char *pk1out, const char *dconf2);
 void monte2_get_biglist(PROT prot);
 void monte2_set_toggle(PROT prot);
 PROT monte2_reduce(PROT prot);
@@ -323,7 +323,7 @@ int monte2()
     return 0;
 }
 
-PROT monte2_load_conflist(char *fname) {
+PROT monte2_load_conflist(const char *fname) {
     PROT prot;
     FILE *fp;
     char sbuff[MAXCHAR_LINE];
@@ -606,7 +606,7 @@ int monte2_load_pairwise(PROT prot)
     return 0;
 }
 
-PROT monte2_load_pk1out(char *pk1out, char *dconf2) {
+PROT monte2_load_pk1out(const char *pk1out, const char *dconf2) {
     PROT prot;
     FILE *fp1,*fp2;
     char sbuff[MAXCHAR_LINE];

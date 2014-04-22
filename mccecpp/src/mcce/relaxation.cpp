@@ -577,7 +577,8 @@ int initial_relaxation(PROT prot)
         printf("   FATAL: Fatal error reported by ionization()\n"); fflush(stdout);
         return USERERR;
     }
-    while(place_missing(prot,1) > 0); rm_dupconf(prot, 0.0001);
+    while(place_missing(prot,1) > 0) {}
+    rm_dupconf(prot, 0.0001);
     //printf("   Current time is %ds\n",(int)(time(NULL)-timer_start));
 
     /* which residues are allowed to relax: */
