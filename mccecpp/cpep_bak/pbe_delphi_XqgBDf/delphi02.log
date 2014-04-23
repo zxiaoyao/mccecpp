@@ -1,0 +1,199 @@
+    
+  ______________DelPhi V. 6.0 (f95)_______________  
+ |                                                | 
+ | A program to solve the PB equation             | 
+ | in 3D, using non-linear form, incorporating    | 
+ | many dielectric regions, multisalt ionic       | 
+ | strength, different probe radii, periodic      | 
+ | and focussing boundary conditions, utilizing   | 
+ | stripped optimum successive over-relaxation    | 
+ | and an improved algorithm for mapping the      | 
+ | Mol. Surface to the finite-Difference grid     | 
+ |                                                | 
+ |    If there is any question, please go to:     | 
+ |       http://compbio.clemson.edu/forum/        | 
+ |     June 2012,by DelPhi Development Team       | 
+ |_________________             __________________| 
+                   DelPhi V. 6.0                    
+   
+ Program started on 2014-04-17 at 19:21:11
+ opening parameter file fort.10
+ unknown input phimap formatPQR
+ epsin. ok    4.00
+ unknown frc format:   PBZ   AU
+ unknown phimap format:   PBZ   AU
+ nonexistence or unexpected end of radius file
+ This is correct in case there are ONLY objects,
+ or in case some specific delphi pdb format is used!
+ nonexistence or unexpected end of charge file
+ This is correct in case there are ONLY objects,
+ or in case some specific delphi pdb format is used!
+ assigning charges and radii...
+
+ opening formatted file:apbs.pqr
+ No DELPHI keyword, assuming Delphi Format number =           0
+ number of atoms read in =         1402  formatted
+ You are not reading from an objectfile!
+ Assuming having only molecules, and one medium
+ Direct mapping of epsilon: (0/1)(n/y)           1
+ time to read in and/or assign rad/chrg=      0.06 s
+ Object number           1  is a molecule
+ modifying midpoints using fort.27
+ Debye Lengths contained in the finite diff. box   -0.0374
+   
+ grid size                  :          65
+ percent of box to be filled:      100.92
+ scale,in grids/A :   2.00
+ xmin,xmax     (A):    16.243    35.444
+ ymin,ymax     (A):    -2.967    23.177
+ zmin,zmax     (A):    13.933    33.673
+ x,y,z range   (A):    19.201    26.144    19.740
+ system geometric center in (A):    25.843    10.105    23.803
+ grid  box is centered in (A)  :    23.708     7.029    20.567
+ object centre offset (gu)     :   777.000   777.000     0.000
+ outer dielectric              :  80.00
+ dielectric in medium number  0:  80.00
+ dielectric in medium number  1:   4.00
+ first kind salt concentration (M)       : 0.1500
+ valences salt 1 are                   1  and           1
+ second kind salt concentration (M)      : 0.0000
+ valences salt 2 are                   0  and           0
+ ionic strength (M)            : 0.1500
+ debye length (A)              : 7.9249
+ absolute temperature (K)      : 297.33
+ ion exclusion radius (A)      : 2.0000
+ probe radius facing water(A)  : 1.4000
+ probe radius, internal (A)    : 1.4000
+ boundary conditions           : focussing   
+ x,y,z periodic bc. and volt. drop flags: F F F F F F
+ # of linear iterations        : automatic
+ # of non-linear iterations    :         0
+ non-linear energy calculat.   : F
+ manual relaxation parameter   : F
+ ionic direct energy contribution: F
+ concentration map output      : F
+ spherical charge distbn.      : F
+ INSIGHT format output         : F
+ site potential output         : T
+ modified atom file output     : F
+ map file label                :
+qdiffxas: qdiffxs4 with an improved surfacing routine       
+ set to  read unformatted pdb file
+  convergence graph turned off
+  potential listings turned off
+  
+ start vw surface at 19:21:11
+ Starting creating Van der Waals  Epsilon Map 
+  
+ Ending creating Van der Waals  Epsilon Map 
+ fill in re-entrant regions at 19:21:11
+ time elapsed :      0.06 s
+ boundary points facing continuum solvent=         6911
+ total number of boundary points before elab.=         6911
+ reading accessible surface arcs data from file  ARCDAT
+ no. of arc points read =        21118
+ grid for indexing accessible points =    1.400
+ bgp added m=        1542  bgp removed  mr =        3164
+ bgp added m=         165  bgp removed  mr =         677
+ bgp added m=           9  bgp removed  mr =          63
+ bgp added m=           0  bgp removed  mr =           0
+ no. cavity mid-points inaccessible to solvent =            0
+ after surface elaboration ibnum=         4723
+     and               ibnumsurf=         4723
+ scaling boundary grid points
+           0  points had to be assigned by global comparison
+ time to turn everything in is      0.15 s
+ number of charges coming from molecules            4
+   
+ number of atom coordinates read  :      1402
+ total number of assigned charges :         4
+ net assigned charge              :    0.0000
+ assigned positive charge         :    0.9850
+ centred at (gu)                  :   33.1713   32.8291   34.0694
+ assigned negative charge         :   -0.9850
+ centred at (gu)                  :   32.8832   33.2082   31.9651
+    
+ number of dielectric boundary points        4723
+ no. dielectric boundary points in salt =            0
+ no. charged boundary grid points =           0
+ iepsmp to db, and charging done at      0.21 s
+ number of grid points assigned charge          30
+  
+  setting boundary conditions
+  
+  
+ focussing boundary condition 
+ read from file
+ run01.phi
+  
+  
+  focussing potential map:
+       qdiffxas: qdiffxs4 with an improved surfacing routine
+ original scale (grids/A)      :    1.0000000000000000     
+ object centre at (A) :    23.707999999999998        7.0289999999999999        20.567000000000000     
+  
+ pulling boundary values out of old potential map...
+  some initial phi values: 
+  midg,midg,1; midg,midg,igrid 
+ -0.20292E-01  0.22053E-01
+  midg,1,midg; midg,igrid,midg 
+  0.38145E-02 -0.55778E-03
+  1,midg,midg; igrid,midg,midg 
+ -0.30319E-02  0.11609E-01
+  
+ gauss-seidel spectral radius is    0.9959
+  
+ estimated iterations to convergence         125
+   
+ setup time was      0.17 s
+   
+ now iterating on 2014-04-17 at 19:21:11
+  
+  
+   rms-change     max change       #iterations
+  0.31745E+00  0.14060E+02 at      10 iterations
+  0.83143E-01  0.31553E+01 at      20 iterations
+  0.21913E-01  0.55794E+00 at      30 iterations
+  0.57965E-02  0.14321E+00 at      40 iterations
+  0.15254E-02  0.39595E-01 at      50 iterations
+  0.39888E-03  0.68456E-02 at      60 iterations
+  0.10525E-03  0.17713E-02 at      70 iterations
+  0.27889E-04  0.51500E-03 at      80 iterations
+  0.74107E-05  0.12589E-03 at      90 iterations
+  0.20074E-05  0.36610E-04 at     100 iterations
+  0.53078E-06  0.10228E-04 at     110 iterations
+  0.14273E-06  0.23329E-05 at     120 iterations
+ finished qdiffx linear iterations at: 19:21:11
+ total time elapsed so far:       0.12 s
+ total grid energy               :            160.7077 kt
+ self-reaction field energy      :           -150.4081 kt
+ total s.charge,no epsin carrying:              0.0000
+ corrected reaction field energy :             -2.1335 kt
+ total reaction field energy     :           -152.5416 kt
+ all required energy terms but grid and self_react.:             -2.1335kt
+ energy calculations done at      0.30 s
+   
+ writing potentials at given sites...
+   
+ coordinates, etc for potential output read from file fort.15
+   
+ potentials written to file run02.frc
+   
+    
+ number of atom coordinates read  :         1402
+    
+ frc stuff now done at   0.0000000000000000     
+  -2.5663447079336261E-003
+  -2.5663447079336261E-003
+   
+ writing potential map in DELPHI format
+           8  -2.5663447079336261E-003
+  -2.5663447079336261E-003
+   
+ potential map written to file
+ run02.phi
+   
+   
+ total cpu time was       0.32 s
+   
+ DelPhi exited at 19:21:11
