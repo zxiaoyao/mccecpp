@@ -699,9 +699,7 @@ int get_env()
 			else env.delphi_clean = 0;
 		}
 		else if (strstr(sbuff, "(PBE_SOLVER)")) {
-			printf("%s", sbuff);
 			str1 = strtok(sbuff, " ");
-			printf("%s", str1);
 
 			if (strstr(str1, "apbs") || strstr(str1, "APBS")) {
 				strcpy(env.pbe_solver, "apbs");
