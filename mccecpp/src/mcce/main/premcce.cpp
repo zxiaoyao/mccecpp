@@ -34,7 +34,7 @@ FILE *premcce_rename(FILE *fp_in);
 FILE *premcce_terminals(FILE *fp_in);
 FILE *premcce_confname(FILE *fp);
 int premcce_match(char *sfrom, char *pattern);
-int premcce_replace(char *sto, char *pattern);
+int cpremcce_replace(char *sto, char *pattern);
 int premcce_hvatoms(PROT prot);
 int premcce_clash(PROT prot);
 int create_param(FILE *pdb_fp, int k_line);
@@ -312,7 +312,7 @@ FILE *premcce_rename(FILE *fp_in)
 				strncpy(sfrom, sbuff+12, 14); sfrom[14] = '\0';
 				if (premcce_match(sfrom, rules_from[i])) {
 					strcpy(sto, sfrom);                 /* a copy */
-					premcce_replace(sto, rules_to[i]);  /* update copy */
+					cpremcce_replace(sto, rules_to[i]);  /* update copy */
 					printf("   Renaming \"%s\" to \"%s\"\n", sfrom, sto);
 					strncpy(sbuff+12, sto, 14);
 				}

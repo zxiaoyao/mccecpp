@@ -2,8 +2,10 @@
 * MCCE library header file
 ********************************/
 
-#include <stdio.h>
-
+#include <cstdio>
+#include <fstream>
+#include <string>
+#include <sstream>
 
 /*--- Constants ---*/
 /* Constants for geometry transformation recorder */
@@ -197,7 +199,7 @@ typedef struct {
     float E;
 } UNIQ_STATE;
 
-typedef struct ATOM_STRUCT {
+struct ATOM {
     int    index;//used for Pascal's MSC - used to generate pairwise atom-atom interaction and store sqrt(atom1.vdw_eps*atom2.vdw_eps)
     char   on;
     int    cal_vdw;      /* flag for if vdw is calculated */
@@ -220,16 +222,16 @@ typedef struct ATOM_STRUCT {
     float  vdw_eps;
     float  sas;
     char   history[12]; /* 2 char for confName, Rotate, Swing, OH */
-    struct ATOM_STRUCT *connect12[MAX_CONNECTED];
+    ATOM *connect12[MAX_CONNECTED];
     int    connect12_res[MAX_CONNECTED];
     int    i_atom_prot;
     int    i_atom_conf;
     int    i_conf_res;
     int    i_res_prot;
     int    i_elem;
-} ATOM;
+};
 
-typedef struct {
+struct CONF {
     char   on;
     char   tmp_flag;    /* can be only used temporarily within a subroutine */
     char   uniqID[15];
@@ -299,7 +301,7 @@ typedef struct {
     float  *occ_table;
     int    counter_trial; /* used in Monte Carlo and rot_pack */
     int    counter_accept;
-} CONF;
+};
 
 typedef struct {
     int    n_conf;
@@ -308,7 +310,7 @@ typedef struct {
     int    k_subres;
 } SUBRES;
 
-typedef struct RES_STRUCT {
+struct RES {
     int    original_index;
     int    resSeq;       /* used for identifying a residue */
     char   resName[4];   /* used for identifying a residue */
@@ -366,13 +368,25 @@ typedef struct RES_STRUCT {
     int    i_subres_on;
 
     int    n_ngh;
-    struct RES_STRUCT **ngh;
+    RES **ngh;
 
     int    nconf_limit;
     float  *sum_crg;
     int    n_flip_max;
     int    counter_trial;
-} RES;
+
+    // Add public member functions
+    std::string getResUniqName() const {
+    	std::stringstream ss;
+    	ss << resName;
+    	ss << chainID;
+    	ss.fill('0');
+    	ss.width(4);
+    	ss << resSeq;
+
+    	return ss.str();
+    }
+};
 
 typedef struct {
     SUBRES  **subres;
@@ -394,7 +408,7 @@ typedef struct GROUP_STRUCT {
     int n_flip_max;
 } GROUP;
 
-typedef struct {
+struct PROT {
     int n_res;
     RES *res;
 
@@ -415,7 +429,15 @@ typedef struct {
 
     int  n_saved;
     UNIQ_STATE *saved_states;
-} PROT;
+
+    // Add some public member functions.
+    /**
+     * @brief Load the info in pdb file to a protein structure.
+     * @param fp the input file stream associated with the pdb file.
+     * @return 0 if succeed.
+     */
+    int loadFromStandardPdb(std::ifstream &fp);
+};
 
 
 typedef struct {
@@ -747,6 +769,7 @@ extern ENV env;
 /*--- Data structure functions ---*/
 ATOM   pdbline2atom(char *line);
 PROT   load_pdb(FILE *fp);
+PROT load_standard_pdb(FILE *fp);
 int    write_pdb(FILE *stream, PROT prot);
 
 int    ins_conf(RES *res, int ins, int n_atom);
@@ -806,6 +829,7 @@ int rotate_atoms(VECTOR v0, VECTOR v1, float angle, int na, ATOM **atoms_p);
 int add_membrane(PROT *prot_p, IPECE *ipece);
 
 /* other functions */
+FILE *cpremcce_rename(FILE *fp_in, const char *rule_path);
 int rm_comment(char *target, char *str);
 int strip(char *target, const char *str);
 int get_env();

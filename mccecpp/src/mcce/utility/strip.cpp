@@ -5,7 +5,7 @@
 
 /**
  * Get the string without the leading and ending spaces
- * @param target new string without space or '\t'.
+ * @param target new string without space or tab.
  * @param str orignal string.
  * @return number of spaces stripped.
  */
