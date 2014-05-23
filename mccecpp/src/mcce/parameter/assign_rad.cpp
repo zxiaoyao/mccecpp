@@ -32,7 +32,7 @@ int assign_rad(PROT prot)
     return 0;
 }
 
-int assign_vdw_param(PROT prot)
+int assign_vdw_param(PROT &prot)
 {  int i, j, k;
    float val;
    FILE *debug_fp;

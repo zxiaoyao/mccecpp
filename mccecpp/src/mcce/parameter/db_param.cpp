@@ -66,7 +66,7 @@
 #include <string.h>
 #include "mcce.h"
 
-GDBM_FILE param_db;
+static GDBM_FILE param_db;
 char gdbm_file[256];
 
 int db_open()

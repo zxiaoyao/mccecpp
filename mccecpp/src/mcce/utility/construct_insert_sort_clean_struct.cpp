@@ -330,7 +330,7 @@ int sort_res(PROT prot) {
 }
 
 
-void id_conf(PROT prot)
+void id_conf(PROT &prot)
 {
 	int kr, kc;
 	char ins;

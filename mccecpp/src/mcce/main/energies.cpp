@@ -27,16 +27,15 @@
  * and the atoms linked to each each entry.
  */
 typedef struct {
-	//int header;
 	float x;
 	float y;
 	float z;
 	float rad;
 	float crg;
-	//int trailer;
 } UNF;
 
-#define NUNIQS 1000000
+// maximum number of atoms in delphi calculation.
+const int NUNIQS = 1000000;
 
 typedef struct {
 	UNF  unf[NUNIQS];      /* this number limits the number of atoms */
@@ -54,9 +53,6 @@ int n_retry;
 char pbe_folder[300];
 char cur_folder[300];
 VECTOR apbs_cglen, apbs_fglen;
-//VECTOR mol_center;
-
-
 
 int conf_energies(int kr, int kc, PROT prot);
 int conf_rxn(int kr, int kc, PROT prot);
@@ -110,6 +106,7 @@ int energies()
 		assign_crg(prot);
 	}
 
+
 	// check net charge of each conformer
 	counter = 0;
 	printf("   Reporting non integer conformer charge ...\n");
@@ -132,6 +129,7 @@ int energies()
 	else printf("   Passed, no non-integer charges\n");
 	printf("   Done\n\n");
 	fflush(stdout);
+
 
 	// connect all the atoms with bonds defined in tpl files
 	printf("   Creating connectivity table...\n"); fflush(stdout);
@@ -174,6 +172,7 @@ int energies()
 		chdir(cur_folder);
 		return USERERR;
 	}
+
 
 	del_runs = delphi_depth();
 	printf("      %d focusing runs required for this protein.\n", del_runs);
@@ -941,29 +940,30 @@ int define_boundary(PROT prot)
 }
 
 int define_boundary_res(PROT prot, int kr, int kc)
-{  int ka, counter;
+{
+	int ka, counter;
 
-/* only count atoms in this conformer */
-counter = 0;
-for (ka=0; ka<prot.res[kr].conf[kc].n_atom; ka++) {
-	if (!prot.res[kr].conf[kc].atom[ka].on) continue;
-	unf_res[counter].x   = prot.res[kr].conf[kc].atom[ka].xyz.x;
-	unf_res[counter].y   = prot.res[kr].conf[kc].atom[ka].xyz.y;
-	unf_res[counter].z   = prot.res[kr].conf[kc].atom[ka].xyz.z;
-	unf_res[counter].rad = prot.res[kr].conf[kc].atom[ka].rad;
-	unf_res[counter].crg = prot.res[kr].conf[kc].atom[ka].crg;
-	sprintf(head_res[counter], "ATOM  %5d %4s%c%3s %c%04d%c%03d",
-			counter%100000, prot.res[kr].conf[kc].atom[ka].name,
-			prot.res[kr].conf[kc].altLoc,
-			prot.res[kr].resName,
-			prot.res[kr].chainID,
-			prot.res[kr].resSeq,
-			prot.res[kr].iCode,
-			prot.res[kr].conf[kc].iConf);
-	counter++;
-}
+	/* only count atoms in this conformer */
+	counter = 0;
+	for (ka=0; ka<prot.res[kr].conf[kc].n_atom; ka++) {
+		if (!prot.res[kr].conf[kc].atom[ka].on) continue;
+		unf_res[counter].x   = prot.res[kr].conf[kc].atom[ka].xyz.x;
+		unf_res[counter].y   = prot.res[kr].conf[kc].atom[ka].xyz.y;
+		unf_res[counter].z   = prot.res[kr].conf[kc].atom[ka].xyz.z;
+		unf_res[counter].rad = prot.res[kr].conf[kc].atom[ka].rad;
+		unf_res[counter].crg = prot.res[kr].conf[kc].atom[ka].crg;
+		sprintf(head_res[counter], "ATOM  %5d %4s%c%3s %c%04d%c%03d",
+				counter%100000, prot.res[kr].conf[kc].atom[ka].name,
+				prot.res[kr].conf[kc].altLoc,
+				prot.res[kr].resName,
+				prot.res[kr].chainID,
+				prot.res[kr].resSeq,
+				prot.res[kr].iCode,
+				prot.res[kr].conf[kc].iConf);
+		counter++;
+	}
 
-return counter;
+	return counter;
 }
 
 int find_atom(VECTOR v, int counter)

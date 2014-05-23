@@ -71,7 +71,7 @@ void get_vdw0_no_sas(PROT prot)
         setup_connect_res(prot, i);
         prot.res[i].conf[0].E_vdw0 = 0.0; /* conformer 0 is defined to have 0 torsion */
         
-	#pragma omp parallel for shared(i) private(j)
+//	#pragma omp parallel for shared(i) private(j)
         for (j=1; j<prot.res[i].n_conf; j++) {
             prot.res[i].conf[j].E_vdw0 = vdw_conf_fast(i, j, i, j, prot, 0);
         }
